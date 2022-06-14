@@ -179,7 +179,7 @@ cloudinary.config(
 )
 
 # Email Properties
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_BACKEND = config('EMAIL_BACKEND')
 # SENDGRID_ECHO_TO_STDOUT = False
 # SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 # EMAIL_HOST = 'smtp.sendgrid.net'
@@ -188,10 +188,10 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 # EMAIL_HOST_PASSWORD = config('SENDGRID_API_KEY')
 # Enable_USE_TLS = False
 # Enable_USE_SSL = True
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = 'f4cb0a36561ab1'
-EMAIL_HOST_PASSWORD = 'f9ac119e200850'
-EMAIL_PORT = '2525'
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = config('EMAIL_PORT')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '../templates/media')
