@@ -180,14 +180,6 @@ cloudinary.config(
 
 # Email Properties
 EMAIL_BACKEND = config('EMAIL_BACKEND')
-# SENDGRID_ECHO_TO_STDOUT = False
-# SENDGRID_SANDBOX_MODE_IN_DEBUG = False
-# EMAIL_HOST = 'smtp.sendgrid.net'
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'apikey'
-# EMAIL_HOST_PASSWORD = config('SENDGRID_API_KEY')
-# Enable_USE_TLS = False
-# Enable_USE_SSL = True
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
